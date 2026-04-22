@@ -225,6 +225,9 @@ body::before{
 }
 /* welcome page end */
 /* aboutme page */
+.few-container{
+    width: 100%;
+}
 .aboutme-page{
     background: linear-gradient(50deg , rgb(79, 79, 255) 60% ,rgb(254, 254, 254) 40%);
     width: 100%;
@@ -236,14 +239,20 @@ body::before{
 
 }
 .left-side{
-    width: 80%;
+    width: 0;
     height: 60%;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 5px 5px 10px rgb(73, 73, 73);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.showleft{
+    width: 80%;
+    opacity: 1;
 }
 .right-side{
-    width: 95%;
+    width: 0;
     height: 60%;
     border-radius: 10px;
     background-color: #fff8f8;
@@ -253,6 +262,13 @@ body::before{
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.showRight{
+    width: 95%;
+    opacity: 1;
 }
 
 .introduce{
@@ -289,7 +305,7 @@ body::before{
     color: rgb(227, 60, 60);
 }
 .introduce p{
-    width: 600px;
+    width: 65%;
     border-left: 3px solid rgb(41, 41, 253);
     padding-left: 10px;
     font-family: "Montserrat", sans-serif;
@@ -320,18 +336,26 @@ body::before{
 }
 
 .card{
-    width: 90%;
+    width: 0;
     height: 150px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 4px 4px 7px rgba(199, 198, 198, 0.644);
+    /* box-shadow: 4px 4px 7px rgba(199, 198, 198, 0.644); */
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Montserrat", sans-serif;
     color: #083ceb;
     padding: 15px;
+    transition: 1s ease-in;
+    opacity: 0;
 
+}
+
+.showcardHobi{
+    opacity: 1;
+    width: 90%;
+    box-shadow: 4px 4px 7px rgba(199, 198, 198, 0.644);
 }
 
 .card img{
@@ -365,6 +389,14 @@ body::before{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.showskill{
+    transform: translateY(20px);
+    opacity: 1;
 }
 
 .deskripsi-skill{
