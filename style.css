@@ -8,16 +8,25 @@
 body{
     background: url(background.png);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .navbarcontainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 50%;
-    margin: 10px auto;
+    margin: 20px auto;
     background-color: white;
     font-family: "Poppins", sans-serif;
     padding: 10px 25px;
@@ -143,6 +152,15 @@ body{
 /* conten */
 
 /* welcome page */
+.conten-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 1700px;
+    width: 100%;
+    gap: 50px;
+    flex-direction: column;
+}
 .welcome-page{
     display: flex;
     align-items: center;
@@ -160,7 +178,7 @@ body{
 .welcome-page .say-welcome .web{
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
-    color: rgb(64, 95, 249);
+    color: rgb(95, 152, 227);
     background-color: white;
     padding: 10px;
     width: 450px;
@@ -198,3 +216,125 @@ body{
     width: 400px;
 }
 /* welcome page end */
+/* aboutme page */
+.aboutme-page{
+    background: linear-gradient(50deg , rgb(79, 79, 255) 60% ,rgb(254, 254, 254) 40%);
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
+    align-items: center;
+
+}
+.left-side{
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgb(73, 73, 73);
+}
+.right-side{
+    width: 95%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: #fff8f8;
+    box-shadow: 5px 5px 10px rgb(73, 73, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.introduce{
+    width: 90%;
+    height: 200px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+
+}
+.name{
+    font-weight: 900;
+    color: #322f2f;
+    font-size: 3rem;
+}
+.role{
+    font-weight: 700;
+    border: 1px blue solid;
+    color: rgb(8, 86, 255);
+    background-color: rgba(145, 182, 255, 0.245);
+    width: 170px;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.location{
+    color: #4d4747;
+}
+.location > i {
+    color: rgb(227, 60, 60);
+}
+.introduce p{
+    width: 600px;
+    border-left: 3px solid rgb(41, 41, 253);
+    padding-left: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+.learnmore{
+    width: 90%;
+}
+
+.learnmore button {
+    background-color: rgb(76, 76, 235);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+
+.learnmore > button > a{
+    color: white;
+    text-decoration: none;
+}
+
+.hoby-card{
+    width: 90%;
+    /* border: solid 1px darkblue; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: start;
+}
+
+.card{
+    width: 90%;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px rgba(199, 198, 198, 0.644);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: #083ceb;
+    padding: 15px;
+
+}
+
+.card img{
+    width: 180px;
+}
+
+.ket p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: .6rem;
+    color: #888787;
+}
+
+/* aboutme page end */
