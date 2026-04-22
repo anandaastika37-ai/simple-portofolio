@@ -164,7 +164,7 @@ body::before{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 2900px;
+    height: 4500px;
     width: 100%;
     gap: 50px;
     flex-direction: column;
@@ -522,3 +522,74 @@ body::before{
 }
 
 /* aboutme page end */
+/* contact */
+
+.contact-page{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-card{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Montserrat";
+    border-radius: 10px;
+    color: gray;
+}
+
+.contact-card button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background-color: #6300d4;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+
+}
+
+.contact-card h2{
+    font-weight: 800;
+    font-size: 2rem;
+    color: rgb(6, 33, 108);
+}
+
+.contact-card button:hover{
+    background-color: #6a6969;
+}
+
+.contact-card button a{
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+.github img{
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.instagram img{
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 7vh;
+    background-color: #727171;
+}
+
+footer p{
+    color: rgb(219, 219, 219);
+    font-family: sans-serif;
+    text-align: start;
+    margin-top: 10px;
+}
