@@ -164,7 +164,7 @@ body::before{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 2800px;
+    height: 2900px;
     width: 100%;
     gap: 50px;
     flex-direction: column;
@@ -347,8 +347,146 @@ body::before{
 
 .myskill-page{
     width: 100%;
-    height: 170vh;
+    height: 180vh;
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr  1fr ;
+    grid-template-rows:  1fr  1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill-card{
+    width: 700px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px rgb(203, 203, 203);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.deskripsi-skill{
+    width: 350px;
+    font-family: "Poppins";
+    color: #6a6969;
+}
+
+.deskripsi-skill button{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: rgb(35, 52, 248);
+    border-radius: 13px;
+    margin-top: 10px;
+
+}
+
+.deskripsi-skill > button:hover{
+    background-color: #325aa5;
+}
+
+.deskripsi-skill > button > a{
+    color: white;
+    text-decoration: none;
+}
+
+.deskripsi-skill h2{
+    font-family: "Montserrat";
+    font-weight: 800;
+    color: #1e2a5f;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.skill-card > img{
+    max-width: 220px;
+}
+
+.js > img , .css > img{
+    width: 160px;
+}
+
+.hastag{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.html .deskripsi-skill .hastag li{
+    border: solid 1px orangered;
+    color: orangered;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    width: 150px;
+    font-size: .8rem;
+    list-style-type: none;
+}
+.css .deskripsi-skill .hastag li{
+    border: solid 1px #2461d2;
+    color: #2461d2;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    width: 150px;
+    font-size: .8rem;
+    list-style-type: none;
+}
+.js .deskripsi-skill .hastag li{
+    border: solid 1px #c4c11e;
+    color: #c4c11e;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    width: 150px;
+    font-size: .8rem;
+    list-style-type: none;
+}
+.bs .deskripsi-skill .hastag li{
+    border: solid 1px #b419f6;
+    color: #b419f6;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    width: 170px;
+    font-size: .8rem;
+    list-style-type: none;
+}
+.php .deskripsi-skill .hastag li{
+    border: solid 1px #6300d4;
+    color: #6300d4;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    width: 140px;
+    font-size: .8rem;
+    list-style-type: none;
+}
+.git .deskripsi-skill .hastag li{
+    border: solid 1px #ef4e21;
+    color: #ef4e21;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    width: 140px;
+    font-size: .8rem;
+    list-style-type: none;
 }
 
 /* aboutme page end */
