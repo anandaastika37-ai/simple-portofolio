@@ -551,7 +551,6 @@ body::before{
     background-color: #6300d4;
     border-radius: 10px;
     margin-top: 30px;
-    
 
 }
 
@@ -592,4 +591,22 @@ footer p{
     font-family: sans-serif;
     text-align: start;
     margin-top: 10px;
+}
+
+.left-side{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profil{
+    border-radius: 50%;
+    border: 4px blue solid;
+}
+
+.checklist{
+    position: absolute;
+    right: 25%;
+    bottom: 15%;
 }
