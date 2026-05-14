@@ -22,18 +22,4 @@ window.addEventListener("scroll" , function(){
         },1000)
         })
     }
-
-    if(scrollValue > 440 && scrollValue < 1100){
-        cardSkill.forEach((card , i) => {
-            this.setTimeout(() => {
-            card.classList.add('showskill')
-            },i * 1000)
-        })
-    }else{
-        cardSkill.forEach((card , i) => {
-            this.setTimeout(() => {
-            card.classList.remove('showskill')
-            },i * 1000)
-        })
-    }
 })
